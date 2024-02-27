@@ -1,9 +1,7 @@
 import csv
 import csv
 import matplotlib.pyplot as plt
-
 from collections import Counter
-
 
 with open('read.csv', 'r') as file: 
     csv_reader = csv.DictReader(file)
@@ -24,7 +22,6 @@ with open('read.csv', 'r') as file:
         return 
     #property_visit()
 
-
     def follow_up():
         # Read each line and look for the word 'follow'
         # if it's present, tell me to follow up, which property
@@ -43,7 +40,6 @@ with open('read.csv', 'r') as file:
         return
     #follow_up()
 
-
     def how_many_times_i_visited_this_property():
         # I want to count the number of times I visited
         # the same property
@@ -61,7 +57,7 @@ with open('read.csv', 'r') as file:
         return
     #how_many_times_i_visited_this_property()
 
-    # # Data Visualization
+    # Data Visualization
     def plot_dictionary_bar(same_property_visit):
         def how_many_times_i_visited_this_property():
         # I want to count the number of times I visited
@@ -89,7 +85,6 @@ with open('read.csv', 'r') as file:
         plt.title('Property Visits')
         plt.show()
         return
-    
-    plot_dictionary_bar(same_property_visit)
-        
+    #plot_dictionary_bar(same_property_visit)
 
+    # NEXT: count how many visits I had every day and draw them on a line graph
